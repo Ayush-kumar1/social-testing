@@ -28,7 +28,7 @@ const postSchema = new mongoose.Schema({
         ref: "User"
     }
 
-})
+}, { timestamps: true })
 
 const res = mongoose.model("Post", postSchema);
 export default res;
